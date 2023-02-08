@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+    {% include "header.html" %}
+<style>
+    #test{
+     background: url("/static/images/1_xMuIOwjliGUPjkzukeWKfw.jpeg") 50% 0 no-repeat fixed;
+     height: 570px;
+     padding: 100px 0 0 0;   
+     }
+</style>
+
+<div id="test">
+{% for message in messages %}
+<div class="alert alert-info msg fade show" role="alert">{{ message }}</div>
+{% endfor %}
+</div>
+{% include "footer.html" %}
+</html>
+
+
